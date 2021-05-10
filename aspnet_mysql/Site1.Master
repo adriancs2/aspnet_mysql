@@ -1,0 +1,46 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="aspnet_mysql.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <style type="text/css">
+        body {
+            font-family: Arial;
+        }
+        .menubar {
+            background: #025d9f;
+        }
+        .menubar a {
+            display: inline-block;
+            padding: 10px 20px;
+            background: none;
+            color: white;
+            text-decoration: none;
+            font-style: normal;
+        }
+        .menubar a:hover {
+            text-decoration: none;
+            font-style: normal;
+            background: #0094ff;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <div class="menubar">
+            <a href="Default.aspx">Member List</a>
+            <a href="MemberEdit.aspx">Add New Member</a>
+        </div>
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
